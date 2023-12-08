@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajouter le lien CDN Bootstrap -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Lien vers votre fichier CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Image and Video Compression API</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="title-container">
+        <h1 class="title">Image, Video Compressor</h1>
+    </div>
+    <div class="content-container">
+        <input type="text" id="input-url" placeholder="Enter Image/Video URL">
+        <button class="btn btn-primary compress-button" onclick="compressMedia()">Compress</button>
+        <div id="output-info" style="display:none;">
+            <h3>Compression Result:</h3>
+            <p>Input Size: <span id="input-size"></span></p>
+            <p>Output Size: <span id="output-size"></span></p>
+            <p>Input Dimensions: <span id="input-dimensions"></span></p>
+            <p>Output Dimensions: <span id="output-dimensions"></span></p>
+            <p>Input Format: <span id="input-format"></span></p>
+            <p>Output Format: <span id="output-format"></span></p>
+            <p>Output URL: <a id="output-url" target="_blank"></a></p>
+        </div>
+    </div>
+</div>
+
+<!-- Lien vers votre fichier JavaScript -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

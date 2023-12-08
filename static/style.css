@@ -1,0 +1,70 @@
+/* Style pour le corps de la page */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #33BEFF; /* Modifier la couleur du fond */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style pour le conteneur principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Style pour le titre au-dessus du cadre blanc */
+.title-container {
+    background-color: #33BEFF; /* Couleur différente du fond pour le titre */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0; /* Pour arrondir les coins supérieurs */
+}
+
+.title {
+    font-size: 32px; /* Ajustez la taille du titre selon vos besoins */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FFFFFF; /* Couleur différente pour le titre */
+}
+
+/* Style pour le cadre avec border radius */
+.content-container {
+    background-color: #FFFFFF;
+    border-radius: 0 0 10px 10px; /* Pour arrondir les coins inférieurs */
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Styling pour le champ de texte et le bouton */
+#input-url {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.compress-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #33BEFF; /* Modifier la couleur du bouton */
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Styling pour la boîte de résultat */
+#output-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Animation pour étirer le cadre après avoir cliqué sur le bouton */
+.compress-button:active + .content-container {
+    height: 400px; /* Ajustez la hauteur selon vos besoins */
+}
