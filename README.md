@@ -34,8 +34,46 @@ Feel free to update the sections as needed, including adding your name to the co
 
 ### About FFmpeg
 FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created. It supports the most obscure ancient formats up to the cutting edge. No matter if they were designed by some standards committee, the community or a corporation. It is also highly portable: FFmpeg compiles, runs, and passes our testing infrastructure FATE across Linux, Mac OS X, Microsoft Windows, the BSDs, Solaris, etc. under a wide variety of build environments, machine architectures, and configurations.
+### Étapes pour installer FFmpeg sur Windows :
+## Téléchargement de l'Exécutable FFmpeg :
 
-## Download FFmpeg
-![Capture d'Écran](bureau/Capture d'écran 2023-12-08 052201.png)
+Rendez-vous sur la page de téléchargement de FFmpeg.
+Sous "Windows Builds," vous pouvez sélectionner un lien pour télécharger l'exécutable statique ou partagé.
+Choisissez l'option qui correspond le mieux à vos besoins. L'exécutable statique est plus simple à utiliser.
+## Extraction de l'Archive :
+
+Une fois le téléchargement terminé, extrayez le contenu de l'archive ZIP dans un dossier de votre choix. Vous pouvez utiliser un outil comme 7-Zip ou l'extracteur de fichiers Windows intégré.
+## Déplacement de FFmpeg :
+
+Déplacez le dossier extrait (contenant les fichiers ffmpeg.exe, ffprobe.exe, etc.) dans un emplacement permanent sur votre disque dur, par exemple, C:\ffmpeg.
+### Étapes pour configurer les variables d'environnement :
+## Ouverture du Panneau de Configuration :
+
+Cliquez avec le bouton droit sur "Ce PC" ou "Ordinateur" sur votre bureau ou dans l'Explorateur de fichiers.
+Sélectionnez "Propriétés."
+## Accès aux Paramètres Système Avancés :
+
+Cliquez sur "Paramètres système avancés" dans le volet de gauche.
+## Ouverture de la Fenêtre des Variables d'Environnement :
+
+Dans la fenêtre Système, cliquez sur le bouton "Variables d'environnement..."
+## Modification de la Variable PATH :
+
+Dans la section "Variables système," sélectionnez la variable "Path" et cliquez sur "Modifier..."
+## Ajout du Chemin de FFmpeg :
+
+Cliquez sur "Nouveau" et ajoutez le chemin complet du dossier où vous avez extrait FFmpeg (par exemple, C:\ffmpeg).
+Cliquez sur "OK" pour fermer toutes les fenêtres.
+## Vérification de l'Installation :
+
+Ouvrez une nouvelle fenêtre de commande (cmd) et tapez les commandes suivantes pour vérifier que FFmpeg est bien installé :
+
+ffmpeg -version
+ffprobe -version
+
+
+Vous devriez voir les informations de version pour FFmpeg et FFprobe s'afficher dans la console.
+
+Maintenant, FFmpeg est installé sur votre système Windows et est configuré dans les variables d'environnement, ce qui signifie que vous pouvez l'utiliser depuis n'importe quel répertoire dans la ligne de commande.
 
 
