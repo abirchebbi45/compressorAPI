@@ -31,3 +31,11 @@ Chebbi Abir
 ### Acknowledgments
 Thanks to the developers of Flask, Bootstrap, Pillow, and FFmpeg for their excellent tools.
 Feel free to update the sections as needed, including adding your name to the contributors and providing a proper license file (if applicable).
+
+### About FFmpeg
+FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created. It supports the most obscure ancient formats up to the cutting edge. No matter if they were designed by some standards committee, the community or a corporation. It is also highly portable: FFmpeg compiles, runs, and passes our testing infrastructure FATE across Linux, Mac OS X, Microsoft Windows, the BSDs, Solaris, etc. under a wide variety of build environments, machine architectures, and configurations.
+
+## Download FFmpeg
+![Capture d'Écran](bureau/Capture d'écran 2023-12-08 052201.png)
+
+
