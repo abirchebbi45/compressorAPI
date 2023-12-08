@@ -9,8 +9,9 @@ Make sure you have Python and the required dependencies installed. You can insta
 pip install -r requirements.txt
 Running the Application
 Run the app.py script to start the Flask application. Open a web browser and navigate to http://localhost:5000 to access the application.
-```bash
 python app.py
+
+
 ### Usage
 Access the web interface by visiting http://localhost:5000 in your browser.
 Enter the URL of the image or video you want to compress.
